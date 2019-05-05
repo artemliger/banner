@@ -16,8 +16,10 @@
   position: relative;
   display: flex;
   flex: 1 1;
-  background: url("/assets/images/back_1.png")no-repeat;
+  background-image: url("../images/back_1.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   max-width: 570px;
   padding: 12px 15px;
   margin-right: 40px;
@@ -55,13 +57,16 @@
   display: flex;
   align-items: center;
   font-family: 'UmnikBold';
+  background-image: url("../images/dott.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   font-size: 55px;
-  max-width: 80px;
+  width: 70px;
   border-radius: 4px;
-  background: #fff;
 }
 .counter-item__value{
   padding: 0 5px;
+  letter-spacing: 5px;
 }
 .counter-item__text{
   padding-top: 5px;
@@ -186,6 +191,10 @@
   .counter-item {
     padding: 5px 0;
   }
+  .counter-item__value {
+    padding: 0 5px;
+    letter-spacing: 8px;
+  }
   .counter-item:not(:last-child) {
     margin-right: 15px;
   }
@@ -287,6 +296,9 @@
   }
   .counter-item {
     padding: 2px 0;
+  }
+  .counter-item__value {
+    letter-spacing: 15px;
   }
   .item-field {
     font-size: 38px;
